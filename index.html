@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Busca CEP</title>
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-white">
+            <h3 class="text-center">Buscador de CEP</h3>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" class="form-control" maxlength="9" placeholder="Digite o CEP">
+              </div>
+              <div class="col-6">
+                <label for="rua">Rua</label>
+                <input id="rua" class="form-control" type="text" placeholder="...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="complemento">Complemento</label>
+                <input id="complemento" class="form-control" type="text" placeholder="...">
+              </div>
+              <div class="col-6">
+                <label for="bairro">Bairro</label>
+                <input id="bairro" class="form-control" type="text" placeholder="...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="cidade">Cidade</label>
+                <input id="cidade" class="form-control" type="text" placeholder="...">
+              </div>
+              <div class="col-6">
+                <label for="estado">Estado</label>
+                <input id="estado" class="form-control" type="text" placeholder="...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 d-flex justify-content-end align-items-end my-2">
+                <input type="button" id="btnlimpar" class="btn btn-danger mr-1" value="Limpar">
+                <input type="submit" id="btnPesquisar" class="btn btn-success" value="Pesquisar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="./assets/js/jquery.mask.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
